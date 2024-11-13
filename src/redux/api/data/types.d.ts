@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 namespace DATA {
   type GetCoursesResponse = {
     id: number;

@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import scss from "./DetailsPage.module.scss";
 import { useParams } from "next/navigation";
@@ -34,6 +33,7 @@ const DetailsPage = () => {
 
     return () => clearTimeout(timer);
   }, []);
+  console.log(isLoadinger);
 
   return (
     <section className={scss.DetailsPage}>
@@ -97,7 +97,7 @@ const DetailsPage = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </section>
   );
 };

@@ -20,7 +20,7 @@ const Section8 = () => {
   });
 
   const messageModel = (data: IFormTelegram) => {
-    let messageTG = `email: <b>${data.email}</b>\n`;
+    const messageTG = `email: <b>${data.email}</b>\n`;
     return messageTG;
   };
 
