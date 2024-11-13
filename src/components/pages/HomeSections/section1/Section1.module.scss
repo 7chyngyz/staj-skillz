@@ -1,0 +1,133 @@
+.Section1 {
+  padding: 50px 0;
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          color: rgb(246, 246, 248);
+          font-family: Source Sans Pro;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20.8px;
+          letter-spacing: 1px;
+        }
+
+        .line {
+          width: 165px;
+          height: 2px;
+          background: #57d9a6;
+        }
+      }
+
+      h1 {
+        color: rgb(246, 246, 248);
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 60.5px;
+        letter-spacing: 0;
+      }
+
+      span {
+        color: rgb(246, 246, 248);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 33px;
+        opacity: 0.8;
+      }
+
+      p {
+        color: rgb(178, 178, 191);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+
+      button {
+        background-color: #57d9a6;
+        width: 160px;
+        height: 50px;
+        border-radius: 4px;
+        border: none;
+        color: rgb(28, 28, 51);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .right {
+      background-image: url("/assets/IMAGE3.png");
+      width: 614px;
+      height: 614px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Section1 {
+    padding: 70px 0;
+
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .left {
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+
+        h1 {
+          font-size: 32px;
+          line-height: 40px;
+        }
+
+        span,
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .title {
+          align-items: center;
+          gap: 5px;
+
+          .line {
+            width: 120px;
+          }
+        }
+
+        button {
+          width: 140px;
+          height: 45px;
+        }
+      }
+
+      .right {
+     display: flex;
+        flex-direction: column;
+        background-image: url("/assets/IMAGE3.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+}

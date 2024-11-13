@@ -1,0 +1,26 @@
+.TopHeader {
+  background: #57d9a6;
+  height: 43px;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    span {
+      font-style: 18px;
+      line-height: 27px;
+      font-weight: 400;
+      color: #1c1c33;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .TopHeader {
+    .content {
+      span {
+        font-style: 15px;
+      }
+    }
+  }
+}
